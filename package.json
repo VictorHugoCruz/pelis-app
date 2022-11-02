@@ -1,0 +1,22 @@
+{
+  "name": "pelis-app",
+  "version": "1.0.0",
+  "description": "sitio web de peliculas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorHugoCruz/pelis-app.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Victor Hugo Cruz Carballo <huguitobodi26@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VictorHugoCruz/pelis-app/issues"
+  },
+  "homepage": "https://github.com/VictorHugoCruz/pelis-app#readme"
+}
