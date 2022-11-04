@@ -18,7 +18,7 @@
 
     <form id="searchForm" class="header__search-form">
       <input type="text" placeholder="Vengadores" />
-      <button>🔍</button>
+      <button id="searchBtn">🔍</button>
     </form>
   </header>
 
@@ -42,7 +42,7 @@
   </section>
 
   <!-- categories -->
-  <section id="categories-preview" class="categories-preview-container">
+  <section id="categoriesPreview" class="categories-preview-container">
     <h2 class="categories-preview__title">Categorías</h2>
 
     <article class="categories-preview__list">
@@ -61,7 +61,7 @@
   </section>
 
   <!-- lista generica -->
-  <section id="generic-list" class="generic-list-container inactive">
+  <section id="genericList" class="generic-list-container inactive">
     <div class="movie-container">
       <img
         src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -87,7 +87,7 @@
     </div>
   </section>
 
-  <section id="movie-detail" class="movie-detail-container inactive">
+  <section id="movieDetail" class="movie-detail-container inactive">
     <h1 class="movie-detail__title">Deadpool</h1>
     <span class="movie-detail__score">7.6</span>
     <p class="movie-detail__description">
@@ -140,8 +140,10 @@
   </section>
 
   <footer>Hecho por Victor Hugo Cruz</footer>
-  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./src/secrets.js"></script>
   <script src="./src/main.js"></script>
+  <script src="./src/nodes.js"></script>
+  <script src="./src/navigator.js"></script>
 </body>
 </html>
