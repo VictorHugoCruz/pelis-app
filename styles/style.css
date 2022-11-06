@@ -144,7 +144,7 @@ button {
   margin-bottom: 16px;
 }
 
-.header__arrow {
+.header__arrow{
   font-weight: var(--font-weight-text2);
   font-size: 36px;
   margin-bottom: 16px;
@@ -152,6 +152,7 @@ button {
   cursor: pointer;
   display: inline-block;
 }
+
 .header-arrow--white {
   color: var(--white);
 }
@@ -365,4 +366,123 @@ footer {
 /* Navigation */
 .inactive {
   display: none;
+}
+
+
+@media (min-width: 800px) {
+  h1{
+    font-size: 38px;
+  }
+  
+  h2{
+    font-size: 30px;
+  }
+  .trending-preview__movie-list{
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .trending-preview__movie-list .movie-container .movie-img{
+    width: 235px;
+    height: 280px;
+    min-width: 235px;
+    min-height: 280px;
+  }
+
+
+  .categories-preview__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .generic-list-container {
+    justify-content: space-around;
+    gap: 2px;
+  }
+
+  .generic-list-container .movie-container{
+    display:flex;
+    justify-content: center;
+    width:22%;
+  }
+  .generic-list-container .movie-container .movie-img{
+    min-width: 180px;
+    min-height: 230px;
+    max-width: 380px;
+    max-height: 500px;
+  }
+
+  .header-container--long {
+    background-repeat:no-repeat ;
+  }
+
+  .movie-detail-container{
+    width: 50%;
+    height: 60%;
+    max-width: 1200px;
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 15%);
+    margin-top: 480px;
+    overflow: hidden;
+  }
+
+
+  footer{
+   margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 1040px){
+  .header__search-form input{
+    width: 75%;
+  }
+  .trending-preview__movie-list{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .trending-preview__movie-list .movie-container .movie-img{
+    width: 300px;
+    height: 400px;
+    min-width: 300px;
+    min-height: 400px;
+    justify-content: space-around;
+  }
+
+  .categories-preview__list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+  }
+  .generic-list-container{
+    padding: 8px, 12px;
+  }
+
+  .categories-list .movie-container{
+    width:30%;
+  }
+  .generic-list-container .movie-container .movie-img{
+    min-width: 250px;
+    min-height: 280px;
+    max-width: 450px;
+    max-height: 600px;
+  }
+
+  .header-container--long {
+    max-width: 450px;
+    height: 630px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left:50px;
+  }
+
+  .movie-detail-container{
+    margin-top: 30px;
+  }
+
 }
